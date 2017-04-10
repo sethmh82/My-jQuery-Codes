@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+</head>
+<body>
+
+
+<div id="empty-div"></div>
+<script>
+
+$("#empty-div").html("<h1>Hi</h1>");
+
+$("#empty-div").append("<h1>Hi there</h1>");
+
+$("#empty-div").append("<h1>Hi there buddy</h1>");
+
+
+var newDiv = $("<div>");
+newDiv.html("A pleasure to meet you");
+
+$("#empty-div").append(newDiv)
+
+
+newDiv.attr({"class" : "fancy", "id" : "yaya"});
+
+newDiv.attr("style", "font-size:35px; color:red;");
+
+
+
+$("empty-div").on("click", function(){
+ alert("I've been clicked!")
+});
+
+
+
+</script>
+
+</body>
+</html>
